@@ -1,0 +1,49 @@
+<!-- Layout für activity_profile.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/lightWhite">
+
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hinweis: Halten Sie ein Profil lange gedrückt, um es zu löschen"
+        android:textStyle="italic"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/profileNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Profilname"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/createProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil erstellen"
+        android:layout_marginTop="16dp"
+        android:background="@color/pastelBlue"/>
+
+    <ListView
+        android:id="@+id/profileListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

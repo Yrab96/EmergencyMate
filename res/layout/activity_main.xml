@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/lightWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <Button
+            android:id="@+id/selectProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil wählen"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/profileSummaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profildaten werden geladen..."
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/button_profiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile verwalten"
+        android:onClick="openProfileActivity"
+        android:background="@color/pastelBlue"/>
+
+    <Button
+        android:id="@+id/button_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notfallkontakte verwalten"
+        android:onClick="openContacts"
+        android:background="@color/pastelGreen"/>
+
+    <Button
+        android:id="@+id/button_medical_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medizinische Informationen speichern"
+        android:onClick="openMedicalInfo"
+        android:background="@color/pastelYellow"/>
+
+    <Button
+        android:id="@+id/button_sos_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOS-Kontakte auswählen"
+        android:onClick="openSOS"
+        android:background="@color/pastelPink"/>
+
+    <Button
+        android:id="@+id/button_send_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOS senden"
+        android:onClick="sendSOS"
+        android:background="@color/colorAccent"/>
+</LinearLayout>
