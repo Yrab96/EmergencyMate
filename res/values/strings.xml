@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">EmergencyMate</string>
-    <string name="button_contacts">Notfallkontakte verwalten</string>
-    <string name="button_medical_info">Medizinische Informationen speichern</string>
-    <string name="button_sos">SOS</string>
-</resources>
